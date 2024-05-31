@@ -1,0 +1,124 @@
+.bx-im-message-comments-panel__container {
+	--im-message-comments-panel__background-color_separator: rgba(var(--im-color-palette-gray-90-rgb), 0.08);
+	--im-message-comments-panel__background-color_accent: #00ace3;
+	--im-message-comments-panel__background-color_text-hover: var(--im-color-palette-blue-70);
+	--im-message-comments-panel__font-color_counter: var(--im-color-palette-white-base);
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 250px;
+	height: 30px;
+
+	cursor: pointer;
+}
+
+.bx-im-message-default-content__container + .bx-im-message-comments-panel__container {
+	margin-top: 12px;
+	padding-top: 6px;
+	border-top: 1px solid var(--im-message-comments-panel__background-color_separator);
+}
+
+.bx-im-message-comments-panel__container.--no-comments {
+	min-width: 208px;
+}
+
+.bx-im-message-comments-panel__container:hover .bx-im-message-comments-panel__text {
+	color: var(--im-message-comments-panel__background-color_text-hover);
+}
+
+.bx-im-message-comments-panel__left {
+	display: flex;
+	align-items: center;
+}
+
+.bx-im-message-comments-panel__right {
+	display: flex;
+	align-items: center;
+}
+
+.bx-im-message-comments-panel__text {
+	font: var(--im-font-size-md)/17px var(--im-font-family-system);
+	font-weight: var(--im-font-weight-medium);
+	color: var(--im-message-comments-panel__background-color_accent);
+}
+
+/* empty */
+.bx-im-message-comments-panel__empty_container {
+	display: flex;
+	align-items: center;
+}
+
+.bx-im-message-comments-panel__empty_icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+	background-image: url('./images/chat-cloud.svg');
+}
+/* end empty */
+
+.bx-im-message-comments-panel__meta_container {
+	display: flex;
+	align-items: center;
+}
+
+/* User avatars */
+.bx-im-message-comments-panel__user_container {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+
+	max-width: 46px;
+	margin-right: 8px;
+	transition: width 0.2s ease;
+}
+
+.bx-im-message-comments-panel__user_avatar {
+	width: 18px;
+	height: 18px;
+	margin-left: -3px;
+	border-radius: 50%;
+	background-size: contain;
+	user-select: none;
+}
+
+.bx-im-message-comments-panel__user_avatar:last-child {
+	margin-left: 0;
+}
+
+.bx-im-message-comments-panel__user_animation-move,
+.bx-im-message-comments-panel__user_animation-enter-active,
+.bx-im-message-comments-panel__user_animation-leave-active {
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.bx-im-message-comments-panel__user_animation-enter-from {
+	transform: translateX(-100%);
+	opacity: 0;
+}
+
+.bx-im-message-comments-panel__user_animation-leave-active {
+	position: absolute;
+}
+/* End user avatars */
+
+.bx-im-message-comments-panel__unread-counter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 18px;
+	width: 18px;
+	border-radius: 30px;
+
+	font: var(--im-font-size-xs) var(--im-font-family-system);
+	font-weight: var(--im-font-weight-medium);
+	color: var(--im-message-comments-panel__font-color_counter);
+	background-color: var(--im-message-comments-panel__background-color_accent);
+}
+
+.bx-im-message-comments-panel__open-icon {
+	width: 16px;
+	height: 16px;
+	background-image: url('./images/chevron-right.svg');
+	background-position: center;
+}

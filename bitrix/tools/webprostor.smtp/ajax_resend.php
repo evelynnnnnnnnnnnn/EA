@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/webprostor.smtp/tools/ajax_resend.php");?>

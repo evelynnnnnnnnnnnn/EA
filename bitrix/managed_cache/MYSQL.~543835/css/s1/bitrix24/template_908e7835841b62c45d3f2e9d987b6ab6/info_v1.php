@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/components/bitrix/socialnetwork.log.ex/templates/.default/style.css" => "171687312798947",]; ?>

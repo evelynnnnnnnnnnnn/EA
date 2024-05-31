@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/components/bitrix/intranet.ustat/style.css" => "171681627533354",]; ?>

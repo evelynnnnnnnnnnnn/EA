@@ -399,7 +399,7 @@ abstract class Application
 	 *            'log' => array(
 	 *              'class_name' => 'MyLog',        // custom log class, must extend ExceptionHandlerLog; can be omited, in this case default Diag\FileExceptionHandlerLog will be used
 	 *              'extension' => 'MyLogExt',      // php extension, is used only with 'class_name'
-	 *              'required_file' => 'modules/mylog.module/mylog.php'     // included file, is used only with 'class_name'
+	 *              'required_file' => 'modules/mylog.module/custom_log.php'     // included file, is used only with 'class_name'
 	 *                'settings' => array(        // any settings for 'class_name'
 	 *                    'file' => 'bitrix/modules/error.log',
 	 *                    'log_size' => 1000000,

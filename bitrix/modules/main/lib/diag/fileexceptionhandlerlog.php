@@ -10,7 +10,7 @@ class FileExceptionHandlerLog extends ExceptionHandlerLog
 	const MAX_LOG_SIZE = 1000000;
 	const DEFAULT_LOG_FILE = "bitrix/modules/error.log";
 
-	private $level;
+	protected $level;
 
 	/** @var Log\LoggerInterface */
 	protected $logger;
